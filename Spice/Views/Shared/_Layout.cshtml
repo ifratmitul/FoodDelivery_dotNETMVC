@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Spice</title>
+    <link rel="stylesheet" href="~/css/style.css"runat="server" type="text/css"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
     <header>
@@ -24,7 +26,7 @@
                                 Content Management
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Category</a>
+                                <a class="dropdown-item" asp-action="Index" asp-controller="Catagory" asp-area="Admin">Category</a>
                                 <a class="dropdown-item" href="#">Sub Category</a>
                                 <a class="dropdown-item" href="#">MenuItem</a>
                                 <a class="dropdown-item" href="#">Coupons</a>

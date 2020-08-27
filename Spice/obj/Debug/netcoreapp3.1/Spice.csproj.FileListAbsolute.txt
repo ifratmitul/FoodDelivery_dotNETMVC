@@ -472,3 +472,9 @@ C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Identit
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Index.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateButtonPartial.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Create.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateBacktoListButton.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TableButtonPartial.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Edit.cshtml.g.cs
