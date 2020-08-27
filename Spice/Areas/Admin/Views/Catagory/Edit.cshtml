@@ -29,19 +29,21 @@
                 </div>
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Details" class="col-form-label"></label>
+                </div>
+                <div class="col-5">
+                    <textarea class="form-control" asp-for="Details"></textarea>
+                </div>
+                <span asp-validation-for="Details" class="text-danger"></span>
+
+            </div>
             <div class="form-group row">
                 <div class="col-5 offset-2">
 
-                    <div class="row ">
-                        <div class="col-6">
-                            <input type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Id" value="Update" />
-
-                        </div>
-                        <div class="col-6">
-                            <a asp-action="Index" class="btn btn-success form-control">Back to list</a>
-                        </div>
-                    </div>
-
+                    <partial name="_EditBacktoListButton" model="Model.Id" />
                 </div>
 
             </div>

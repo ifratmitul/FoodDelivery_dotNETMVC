@@ -28,6 +28,17 @@
                     <input asp-for="Name" class="form-control" />
                 </div>
                 <span asp-validation-for="Name" class="text-danger"></span>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Details" class="col-form-label"></label>
+                </div>
+                <div class="col-5">
+                    <textarea class="form-control" asp-for="Details"></textarea>
+                </div>
+                <span asp-validation-for="Details" class="text-danger"></span>
+
             </div>
             <div class="form-group row">
                 <div class="col-5 offset-2">

@@ -1,0 +1,25 @@
+﻿@model Spice.Models.Catagory
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+
+<div class=" border backgroundWhite">
+
+
+    <div class="card">
+        <div class="card-header">
+            Category Details
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(m=>m.Name)</h5>
+            <p class="card-text">@Html.DisplayFor(m =>m.Details)</p>
+            <a class="btn btn-primary" asp-action="Index">Go Back to List</a>
+        </div>
+    </div>
+
+</div>

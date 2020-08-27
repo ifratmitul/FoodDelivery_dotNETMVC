@@ -1,0 +1,44 @@
+﻿@model Spice.Models.Catagory
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+
+<div class=" border backgroundWhite">
+    <div class="row">
+        <div class="col-6">
+
+            <h2 class=" text-danger">Confirm delete category</h2>
+
+        </div>
+
+    </div>
+    <form method="post" asp-action="Edit">
+        <div class="border backgroundWhite">
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Name" class="col-form-label"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Name" readonly class="form-control" />
+                    <small class=" text-secondary">Once deleted this data, can't be recovered!</small>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-5 offset-2">
+
+                    <partial name="_DeleteBacktoListButton" model="Model.Id" />
+                </div>
+
+            </div>
+        </div>
+
+
+    </form>
+</div>

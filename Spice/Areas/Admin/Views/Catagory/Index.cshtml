@@ -28,6 +28,7 @@
                   <thead>
                       <tr>
                           <th scope="col"> @Html.DisplayNameFor(m => m.Name)</th>
+                          <th scope="col"> @Html.DisplayNameFor(m=>m.Details)</th>
                           <th></th>
                           <th></th>
                       </tr>
@@ -36,13 +37,14 @@
 
                       @foreach (var item in Model)
                       {
-                          <tr>
-                              <td>@Html.DisplayFor(m => item.Name)</td>
-                              <td><partial name="_TableButtonPartial" model="item.Id" /></td>
-                              
+                      <tr>
+                          <td>@Html.DisplayFor(m => item.Name)</td>
+                          <td>@Html.DisplayFor(m => item.Details)</td>
+                          <td><partial name="_TableButtonPartial" model="item.Id" /></td>
 
 
-                          </tr>
+
+                      </tr>
                       }
 
 

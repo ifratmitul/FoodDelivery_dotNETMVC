@@ -478,3 +478,7 @@ C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\V
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CreateBacktoListButton.cshtml.g.cs
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TableButtonPartial.cshtml.g.cs
 C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Edit.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EditBacktoListButton.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Delete.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_DeleteBacktoListButton.cshtml.g.cs
+C:\Users\Mitul\Documents\Spice\Spice\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Catagory\Details.cshtml.g.cs
