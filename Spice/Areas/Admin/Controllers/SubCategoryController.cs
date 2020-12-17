@@ -42,5 +42,39 @@ namespace Spice.Areas.Admin.Controllers
             return View(model);
         
         }
+
+        //post-create
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create ( SubCategoryAndCategoryViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var doesSubcategoryExists = _db.SubCategory.Include(s => s.Category)
+                                            .Where(s => s.Name == model.SubCategory.Name && s.Category.Id == model.SubCategory.CategoryId);
+                if(doesSubcategoryExists.Count() > 0)
+                {
+                    //eror
+                }
+                else
+                {
+                    _db.SubCategory.Add(model.SubCategory);
+                    await _db.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+            
+            }
+
+            SubCategoryAndCategoryViewModel modelVM = new SubCategoryAndCategoryViewModel()
+            {
+                CategoryList = await _db.Catagory.ToListAsync(),
+                SubCategory = model.SubCategory,
+                subCategoryList = await _db.SubCategory.OrderBy(p => p.Name)
+                                                        .Select(p => p.Name)
+                                                        .ToListAsync()
+            };
+            return View(modelVM);
+        }
     }
 }
